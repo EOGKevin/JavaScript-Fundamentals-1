@@ -210,6 +210,7 @@ if (height) {
 }
 */
 
+/*
 const age = 18;
 if (age === 18) console.log("You just became an adult :D (strict)");
 
@@ -234,3 +235,11 @@ if (favourite !== 23) {
   // loose = (!=) strict = (!==)
   console.log("Why not 23?");
 }
+*/
+
+const hasDriversLicense = true; // A
+const hasGoodVision = false; // B
+
+console.log(hasDriversLicense && hasGoodVision); // False
+console.log(hasDriversLicense || hasGoodVision); // True
+console.log(!hasDriversLicense);
