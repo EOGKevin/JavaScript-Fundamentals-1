@@ -238,8 +238,23 @@ if (favourite !== 23) {
 */
 
 const hasDriversLicense = true; // A
-const hasGoodVision = false; // B
+const hasGoodVision = true; // B
 
-console.log(hasDriversLicense && hasGoodVision); // False
+console.log(hasDriversLicense && hasGoodVision); // True if both true
 console.log(hasDriversLicense || hasGoodVision); // True
-console.log(!hasDriversLicense);
+console.log(!hasDriversLicense); // hasDriversLicense = false
+
+//if(hasDriversLicense && hasGoodVision) {
+//  console.log('Sarah is able to drive!');
+//} else {
+//  console.log('Someone else should drive...');0
+//}
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if(hasDriversLicense && hasGoodVision && !isTired) {
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
