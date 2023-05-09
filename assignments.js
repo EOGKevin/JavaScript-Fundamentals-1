@@ -15,7 +15,7 @@ console.log(typeof myPopulation);
 console.log(typeof mycountry);
 console.log(typeof myLanguage);
 
-language = "Danish";
+myLanguage = "Danish";
 
 myPopulation /= 2;
 console.log(myPopulation);
@@ -35,10 +35,11 @@ const description =
   myContinent +
   ", and its " +
   myPopulation +
-  " people speak portuguese";
+  " people speak "
+  myLanguage;
 
 console.log(
-  `${myCountry} is in ${myContinent}, and its ${myPopulation} people speak portuguese`
+  `${myCountry} is in ${myContinent}, and its ${myPopulation} people speak ${myLanguage}`
 );
 
 //myPopulation = 13000000;
@@ -80,5 +81,41 @@ if (numNeighbours === 1) {
   console.log("More than 1 border");
 } else {
   console.log("No borders");
+}
+*/
+
+/*
+const prefLanguage = 'English';
+const maxPopulation = 50000000;
+const prefIsland = false;
+
+if (prefLanguage === myLanguage && maxPopulation >= myPopulation && prefIsland === isIsland){
+  console.log('You should live in Denmark! :)');
+} else {
+  console.log('Denmark does not meet your criteria :(');
+}
+*/
+
+/*
+switch (myLanguage) {
+  case 'chinese':
+  case 'mandarin':
+    console.log('MOST number of native speakers!');
+    break;
+  case 'spanish':
+    console.log('2nd place in number of native speakers');
+    break;
+  case 'english':
+    console.log('3rd place');
+    break;
+  case 'hindi':
+    console.log('Number 4');
+    break;
+  case 'arabic':
+    console.log('5th most spoken language');
+    break;
+  default:
+    console.log('Great language too :D');
+    break;
 }
 */
